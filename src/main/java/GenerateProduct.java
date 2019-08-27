@@ -1,9 +1,11 @@
 import productCart.PaymentInfo;
+import services.Membership;
 
 public class GenerateProduct {
 
 	public static void main(String[] args) {
-		PaymentInfo paymentInfo = new PaymentInfo();
+		Membership membership = new Membership();
+		PaymentInfo paymentInfo = new PaymentInfo(membership);
 	}
 
 }
