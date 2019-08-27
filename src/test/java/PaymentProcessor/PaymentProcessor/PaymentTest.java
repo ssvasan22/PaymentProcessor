@@ -36,7 +36,6 @@ public class PaymentTest {
 	public void testVideoBehaviour() {
 //		paymentInfo.setVideoName("Game Of Thrones");
 		paymentInfo.setVideoName("Learning to Ski");
-		//fix unit test
 		paymentInfo.setVideo(true);
 	}
 	

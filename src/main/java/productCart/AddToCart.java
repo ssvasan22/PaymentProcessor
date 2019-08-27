@@ -3,8 +3,8 @@ package productCart;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddCart {
-	private List<String> itemsToAddToCart = new ArrayList<String>();
+public class AddToCart {
+	private ArrayList<String> itemsToAddToCart = new ArrayList<String>();
 
     public void AddToCart() {
 
@@ -18,7 +18,7 @@ public class AddCart {
         return itemsToAddToCart;
     }
 
-    public void setItemsToAddToCart(List<String> itemsToAddToCart) {
+    public void setItemsToAddToCart(ArrayList<String> itemsToAddToCart) {
         this.itemsToAddToCart = itemsToAddToCart;
     }
 }

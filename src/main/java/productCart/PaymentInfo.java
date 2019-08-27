@@ -1,5 +1,6 @@
 package productCart;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -19,9 +20,11 @@ public class PaymentInfo extends Membership{
     private String videoName;
     private Double price;
 
+    private ArrayList<String> itemsToBeAddedToCart = new ArrayList<>();
+
     Email email = new Email();
     Membership membershipInfo = new Membership();
-    AddCart addToCart = new AddCart();
+    AddToCart addToCart = new AddToCart();
     PackagingSlip slip = new PackagingSlip();
 
     public PaymentInfo(Membership mem) {
@@ -34,7 +37,9 @@ public class PaymentInfo extends Membership{
     public void setPhysical_Product(boolean physical_Product) {
         isPhysical_Product = physical_Product;
         if(isPhysical_Product) {
-            addToCart.setItemsToAddToCart(Collections.singletonList(getProductName()));
+            itemsToBeAddedToCart.clear();
+            itemsToBeAddedToCart.add(getProductName());
+            addToCart.setItemsToAddToCart(itemsToBeAddedToCart);
             slip.generatePackingSlipForShipping(membershipInfo);
             generateCommissionPaymentToAgent();
         }
@@ -47,7 +52,9 @@ public class PaymentInfo extends Membership{
     public void setBook(boolean book) {
         isBook = book;
         if(isBook) {
-            addToCart.setItemsToAddToCart(getBookName());
+            itemsToBeAddedToCart.clear();
+            itemsToBeAddedToCart.add(getBookName());
+            addToCart.setItemsToAddToCart(itemsToBeAddedToCart);
             slip.generatePackingSlipForShipping(membershipInfo);
             slip.createDuplicatePackingSlipToRoyaltyDepartment(membershipInfo);
             generateCommissionPaymentToAgent();
@@ -60,18 +67,22 @@ public class PaymentInfo extends Membership{
 
     public void setVideo(boolean video) {
         isVideo = video;
+
         if(isVideo) {
             if(getVideoName().equalsIgnoreCase("Learning to Ski")) {
-                addToCart.setItemsToAddToCart(Collections.singletonList("Learning to Ski"));
-//                addToCart.getItemsToAddToCart().add("First Aid");
-                addToCart.setItemsToAddToCart(Collections.singletonList("First Aid"));
+                itemsToBeAddedToCart.clear();
+                itemsToBeAddedToCart.add("Learning To Ski");
+                itemsToBeAddedToCart.add("First Aid");
+                addToCart.setItemsToAddToCart(itemsToBeAddedToCart);
                 slip.generatePackingSlipForShipping(membershipInfo);
                 System.out.println("Payment for videos");
                 for(int i = 0; i < addToCart.getItemsToAddToCart().size(); i++) {
                 	System.out.println("Video Name : " + addToCart.getItemsToAddToCart().get(i));
                 }
             } else {
-                addToCart.setItemsToAddToCart(Collections.singletonList(getVideoName()));
+                itemsToBeAddedToCart.clear();
+                itemsToBeAddedToCart.add(getVideoName());
+                addToCart.setItemsToAddToCart(itemsToBeAddedToCart);
                 for(int i = 0; i < addToCart.getItemsToAddToCart().size(); i++) {
                 	System.out.println("Video Name : " + addToCart.getItemsToAddToCart().get(i));
                 }
@@ -109,8 +120,8 @@ public class PaymentInfo extends Membership{
         this.productName = productName;
     }
 
-    public List<String> getBookName() {
-        return Collections.singletonList(bookName);
+    public String getBookName() {
+        return bookName;
     }
 
     public void setBookName(String bookName) {
