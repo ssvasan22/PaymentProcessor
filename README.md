@@ -6,6 +6,8 @@ Code implement uses Java as the Programming language
 
 Unit test uses Junit as a basic testing procedure
 
+Project is complied as a maven project
+
 Required fields for the unit test:
 	Memebership information - member name, email address, phone number and home/company address, price of the product
 	
