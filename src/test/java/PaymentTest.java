@@ -36,6 +36,7 @@ public class PaymentTest {
 		public void testVideoBehaviour() {
 //			paymentInfo.setVideoName("Game Of Thrones");
 			paymentInfo.setVideoName("Learning to Ski");
+			paymentInfo.setPrice(60.0);
 			paymentInfo.setVideo(true);
 		}
 		

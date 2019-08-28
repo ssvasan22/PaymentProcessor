@@ -40,7 +40,7 @@ public class PaymentInfo extends Membership{
             itemsToBeAddedToCart.clear();
             itemsToBeAddedToCart.add(getProductName());
             addToCart.setItemsToAddToCart(itemsToBeAddedToCart);
-            slip.generatePackingSlipForShipping(membershipInfo);
+            slip.generatePackingSlipForShipping(membershipInfo, getProductName(), getPrice());
             generateCommissionPaymentToAgent();
         }
     }
@@ -55,8 +55,8 @@ public class PaymentInfo extends Membership{
             itemsToBeAddedToCart.clear();
             itemsToBeAddedToCart.add(getBookName());
             addToCart.setItemsToAddToCart(itemsToBeAddedToCart);
-            slip.generatePackingSlipForShipping(membershipInfo);
-            slip.createDuplicatePackingSlipToRoyaltyDepartment(membershipInfo);
+            slip.generatePackingSlipForShipping(membershipInfo, getBookName(), getPrice());
+            slip.createDuplicatePackingSlipToRoyaltyDepartment(membershipInfo, getBookName(), getPrice());
             generateCommissionPaymentToAgent();
         }
     }
@@ -74,8 +74,7 @@ public class PaymentInfo extends Membership{
                 itemsToBeAddedToCart.add("Learning To Ski");
                 itemsToBeAddedToCart.add("First Aid");
                 addToCart.setItemsToAddToCart(itemsToBeAddedToCart);
-                slip.generatePackingSlipForShipping(membershipInfo);
-                System.out.println("Payment for videos");
+                slip.generatePackingSlipForShipping(membershipInfo, getVideoName(), getPrice());
                 for(int i = 0; i < addToCart.getItemsToAddToCart().size(); i++) {
                 	System.out.println("Video Name : " + addToCart.getItemsToAddToCart().get(i));
                 }
@@ -83,6 +82,7 @@ public class PaymentInfo extends Membership{
                 itemsToBeAddedToCart.clear();
                 itemsToBeAddedToCart.add(getVideoName());
                 addToCart.setItemsToAddToCart(itemsToBeAddedToCart);
+                slip.generatePackingSlipForShipping(membershipInfo, getVideoName(), getPrice());
                 for(int i = 0; i < addToCart.getItemsToAddToCart().size(); i++) {
                 	System.out.println("Video Name : " + addToCart.getItemsToAddToCart().get(i));
                 }

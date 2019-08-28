@@ -1,36 +1,44 @@
 
-Œsquid:S1192"pDefine a constant instead of duplicating this literal "===============================================" 4 times.(ëæİÒûÿÿÿÿ
-xsquid:UselessImportCheck"TRemove this unnecessary import: same package classes are always implicitly imported.(ş²—ş
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ëæİÒûÿÿÿÿ
+squid:S106"9Replace this use of System.out or System.err by a logger.(ëæİÒûÿÿÿÿ
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(Å¢¥¿úÿÿÿÿ8ÑµğÃÍ-
 T
-squid:S106	"9Replace this use of System.out or System.err by a logger.(ö„Äšşÿÿÿÿ
+squid:S106"9Replace this use of System.out or System.err by a logger.(ëæİÒûÿÿÿÿ
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(«”Ğî8ÁëòÃÍ-
+ksquid:S1192"HDefine a constant instead of duplicating this literal "Item : " 3 times.(ğ˜‡ªşÿÿÿÿ8¬ÏôÃÍ-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ğ˜‡ªşÿÿÿÿ8ñİóÃÍ-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(€„şäşÿÿÿÿ8Ô­íÃÍ-
+xsquid:UselessImportCheck"TRemove this unnecessary import: same package classes are always implicitly imported.(ş²—ş
+T
+squid:S106	"9Replace this use of System.out or System.err by a logger.(ëæİÒûÿÿÿÿ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ê†£
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ê‡ûÃÍ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Šûßşÿÿÿÿ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(ö¢¡ª
+dsquid:UselessImportCheck"4Remove this unused import 'productCart.PaymentInfo'.(®Í’ßùÿÿÿÿ8¢òÑÃÍ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(§™Ë›ÿÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ëæİÒûÿÿÿÿ
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ª¿úÃÍ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(»•Ã¯şÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ş…¤ÿÿÿÿÿ
+Œsquid:S1192	"pDefine a constant instead of duplicating this literal "===============================================" 4 times.(ëæİÒûÿÿÿÿ
 T
 squid:S106
-"9Replace this use of System.out or System.err by a logger.(ëæİÒûÿÿÿÿ
+"9Replace this use of System.out or System.err by a logger.(ö„Äšşÿÿÿÿ
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ğ˜‡ªşÿÿÿÿ8¬ÏôÃÍ-
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(Šûßşÿÿÿÿ
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ê†£
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(€„şäşÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(§™Ë›ÿÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ëæİÒûÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ş…¤ÿÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ëæİÒûÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(œï¢èüÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(Å¢¥¿úÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(»•Ã¯şÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(ö¢¡ª
+squid:S106"9Replace this use of System.out or System.err by a logger.(œï¢èüÿÿÿÿ
